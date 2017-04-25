@@ -7,8 +7,8 @@
     <ProjectGuid>{27635E7E-0F43-46B8-B957-92790F14AEB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sangmado.Fida.Messaging</RootNamespace>
-    <AssemblyName>Sangmado.Fida.Messaging</AssemblyName>
+    <RootNamespace>Sangmado.Inka.MessageEncoding</RootNamespace>
+    <AssemblyName>Sangmado.Inka.MessageEncoding</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
