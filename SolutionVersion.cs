@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyDescription("Sangmado.Inka.MessageEncoding")]
+[assembly: AssemblyDescription("Sangmado.Fida.MessageEncoding")]
 [assembly: AssemblyCompany("Dennis Gao")]
-[assembly: AssemblyProduct("Sangmado.Inka.MessageEncoding")]
+[assembly: AssemblyProduct("Sangmado.Fida.MessageEncoding")]
 [assembly: AssemblyCopyright("Copyright © 2015-2017, Dennis Gao, All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyConfiguration("")]

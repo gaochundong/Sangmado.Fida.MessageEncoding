@@ -3,7 +3,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using Sangmado.Inka.Serialization;
 
-namespace Sangmado.Inka.MessageEncoding
+namespace Sangmado.Fida.MessageEncoding
 {
     public class XmlMessageEncoder : IMessageEncoder
     {
