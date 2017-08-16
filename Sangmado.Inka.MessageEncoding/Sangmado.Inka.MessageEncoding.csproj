@@ -43,9 +43,8 @@
       <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Sangmado.Inka.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sangmado.Inka.Serialization.1.0.0.0\lib\net46\Sangmado.Inka.Serialization.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Sangmado.Inka.Serialization, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sangmado.Inka.Serialization.1.0.4.0\lib\net46\Sangmado.Inka.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Sangmado.Inka.Serialization.ProtocolBuffers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sangmado.Inka.Serialization.ProtocolBuffers.1.0.0.0\lib\net46\Sangmado.Inka.Serialization.ProtocolBuffers.dll</HintPath>

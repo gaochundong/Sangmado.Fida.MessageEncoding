@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
 using Sangmado.Inka.Serialization;
 
 namespace Sangmado.Inka.MessageEncoding
@@ -8,9 +10,20 @@ namespace Sangmado.Inka.MessageEncoding
         public XmlMessageEncoder()
         {
             this.CompressionEnabled = true;
+
+            this.Settings = new XmlWriterSettings()
+            {
+                Indent = false,
+                OmitXmlDeclaration = true,
+                NewLineHandling = NewLineHandling.None,
+            };
+            this.Namespaces = new XmlSerializerNamespaces(new[] { XmlQualifiedName.Empty });
         }
 
         public bool CompressionEnabled { get; set; }
+
+        public XmlWriterSettings Settings { get; set; }
+        public XmlSerializerNamespaces Namespaces { get; set; }
 
         public byte[] EncodeMessage(object message)
         {
@@ -19,12 +32,12 @@ namespace Sangmado.Inka.MessageEncoding
 
             if (CompressionEnabled)
             {
-                var xml = XmlConvert.SerializeObject(message);
+                var xml = Sangmado.Inka.Serialization.XmlConvert.SerializeObject(message, this.Settings, this.Namespaces);
                 return GZipCompression.Compress(Encoding.UTF8.GetBytes(xml));
             }
             else
             {
-                var xml = XmlConvert.SerializeObject(message);
+                var xml = Sangmado.Inka.Serialization.XmlConvert.SerializeObject(message, this.Settings, this.Namespaces);
                 return Encoding.UTF8.GetBytes(xml);
             }
         }
@@ -36,12 +49,12 @@ namespace Sangmado.Inka.MessageEncoding
 
             if (CompressionEnabled)
             {
-                var xml = XmlConvert.SerializeObject(message);
+                var xml = Sangmado.Inka.Serialization.XmlConvert.SerializeObject(message, this.Settings, this.Namespaces);
                 return GZipCompression.Compress(Encoding.UTF8.GetBytes(xml));
             }
             else
             {
-                var xml = XmlConvert.SerializeObject(message);
+                var xml = Sangmado.Inka.Serialization.XmlConvert.SerializeObject(message, this.Settings, this.Namespaces);
                 return Encoding.UTF8.GetBytes(xml);
             }
         }
